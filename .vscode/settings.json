@@ -145,11 +145,35 @@
     },
     "todohighlight.keywords": [
         {
-            "text": ":=",
+            "text": " =: ",
             "color": "#e76e50",
         },
         {
-            "text": "<=",
+            "text": " <=: ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " < ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " > ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " <= ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " => ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " != ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " == ",
             "color": "#e76e50",
         },
         {
@@ -179,7 +203,12 @@
         },
         {
             "text": "rv.S",
-            "color": "#f3ffbd",
+            "color": "darkorange",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.X",
+            "color": "red",
             "isWholeLine": true,
         },
         {
@@ -196,14 +225,6 @@
             "color": "#0f8f69",
         },
         {
-            "text": "| FIGURE |",
-            "color": "#0f8f69",
-        },
-        {
-            "text": "| FIGURE2 |",
-            "color": "#0f8f69",
-        },
-        {
             "text": "| TABLE |",
             "color": "#0f8f69",
         },
@@ -212,7 +233,7 @@
             "color": "#0f8f69",
         },
         {
-            "text": "| VALUES |",
+            "text": "| VALTABLE |",
             "color": "#0f8f69",
         },
         {
@@ -220,11 +241,15 @@
             "color": "#0f8f69",
         },
         {
-            "text": "| ATTACH |",
+            "text": "| ATTACHPDF |",
             "color": "#0f8f69",
         },
         {
             "text": "| PYTHON |",
+            "color": "#0f8f69",
+        },
+        {
+            "text": "| MARKUP |",
             "color": "#0f8f69",
         },
         {
@@ -248,7 +273,11 @@
             "color": "#4989a2",
         },
         {
-            "text": "_[A]",
+            "text": "_[F]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[M]",
             "color": "#4989a2",
         },
         {
@@ -260,32 +289,77 @@
             "color": "#4989a2",
         },
         {
-            "text": "_[[VALUES]]",
+            "text": "_[S]",
             "color": "#4989a2",
+        },
+        {
+            "text": "_[U]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[[SHELL]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[BOX]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[TOPIC]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[INDENT]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[ITALLIC]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[TEXT]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
         },
         {
             "text": "_[[PYTHON]]",
             "color": "#4989a2",
+            "isWholeLine": true,
         },
         {
-            "text": "_[[LATEX]]",
+            "text": "_[[SCRIPT]]",
             "color": "#4989a2",
+            "isWholeLine": true,
         },
         {
             "text": "_[[LAYOUT]]",
             "color": "#4989a2",
+            "isWholeLine": true,
         },
         {
-            "text": "_[[RST]]",
+            "text": "_[[METADATA]]",
             "color": "#4989a2",
+            "isWholeLine": true,
         },
         {
-            "text": "_[[HTML]]",
+            "text": "_[[ENDNOTES]]",
             "color": "#4989a2",
+            "isWholeLine": true,
         },
         {
             "text": "_[[END]]",
             "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[NEWPAGE]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
         },
     ],
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
@@ -418,7 +492,8 @@
     ],
     "python-envs.defaultEnvManager": "ms-python.python:system",
     "python-envs.pythonProjects": [],
-    "python.analysis.autoImportCompletions": false
+    "python.analysis.autoImportCompletions": false,
+    "window.zoomLevel": 1,
 }
 // ========================================================================== //
 // bottom

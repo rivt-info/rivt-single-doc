@@ -2,7 +2,7 @@
 import rivtlib.rvapi as rv
 
 # rv rv_localB: True
-# rv rv_docname: Example Single Doc
+# rv rv_docnameS: Single Doc Example
 
 # %% loads
 rv.I("""Load Combinations 
@@ -16,7 +16,7 @@ rv.I("""Load Combinations
     16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
     ============= ================================================
 
-    | FIGURE | s-beam.png | 65, Beam Geometry
+    | IMAGE | s-beam.png | 65, Beam Geometry
 
     Bending Stress Formula _[E]
     σ1 = M1 / S1 _[A]
@@ -32,7 +32,7 @@ rv.V("""Loads and Geometry
     D_4 := 2*0.5*klf |klf, kN_m , 2 | fixed machinery  DL
     L_1 := 40*psf | psf, kPA, 2 | ASCE7-O5 LL 
     
-    | VALUES | s-beam1-v.csv | Beam Geometry, 0:0  _[T]
+    | VALTABLE | s-beam1-v.csv | Beam Geometry, 0:0, num
 
     Uniform Distributed Loads
     dl_1 <= 1.2 * (W_1 * (D_1 + D_2 + D_3) + D_4) | klf, kN_m, 2 | dead load : ASCE7-05 2.3.2  _[E]
@@ -45,13 +45,12 @@ rv.V("""Loads and Geometry
 # %% section properties
 rv.V("""Beam Section Properties
 
-    | PYTHON | s-sectprop.py | nodocstring
+    | PYTHON | s-sectprop.py | nodoc
 
     section_1 <= rectsect(10*inch, 18*inch) | in3, cm3, 2 | function: rect sect modulus _[E]
 
     inertia_1 <= rectinertia(10*inch, 18*inch) | in4, cm4, 1 | function: rect moment inertia _[E]
 
-    """)
 # %% force
 rv.V("""Force and Stress
         
@@ -60,31 +59,27 @@ rv.V("""Force and Stress
         fb_1 <= m_1 / section_1 | psi, MPA, 1 | bending stress _[E]
     
     """)
-# %% tool
-rv.T("""Metadata
-
-    _[[PYTHON]] 
-    rv_metaD = {
-    "authors": "rholland",
-    "version": "0.7.2",
-    "email": "rod.h.holland@gmail.com",
-    "repo": "https://github.com/rivt-info/rivt-single-doc",
-    "license": "https://opensource.org/license/mit/",
-    "fork1": ["author", "version", "email", "repo"],
-    "fork2": [],
-    }
-    _[[END]]
-
-    """)
 # %% doc
 rv.D("""Publish Doc 
 
+    _[[META]] 
+        rv_metaD = {
+        "authors": "rholland",
+        "version": "0.7.2",
+        "email": "rod.h.holland@gmail.com",
+        "repo": "https://github.com/rivt-info/rivt-single-doc",
+        "license": "https://opensource.org/license/mit/",
+        "fork1": ["author", "version", "email", "repo"],
+        "fork2": [],
+        }
+    _[[END]]
+
     _[[LAYOUT]]
-        logopath: 
-        pdfheader: ###Page### of ###TotalPages###
-        footer: []
+        logopathP: logo.png 
+        pdfheaderL: [docnameS, pageS, totalpageS]
+        footerL: [logoO, dateO, timeO, filenameS, versionS]
     _[[END]]
     
     | PUBLISH | rivt | rst2pdf
 
-    """)
+    """)'=-

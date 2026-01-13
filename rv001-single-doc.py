@@ -1,8 +1,7 @@
 #! python
 import rivtlib.rvapi as rv
 
-# rv rv_localB: True
-# rv rv_docnameS: Example Single Doc
+# rv singledoc: True
 
 # %% loads
 rv.I("""Load Combinations 
@@ -16,48 +15,50 @@ rv.I("""Load Combinations
     16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
     ============= ================================================
 
-    | FIGURE | s-beam.png | 65, Beam Geometry
+    | IMAGE | beam.png | Beam Geometry, .65, num
 
     Bending Stress Formula _[E]
-    σ1 = M1 / S1 _[A]
+    σ1 = M1 / S1 _[M]
 
     """)
 # %% values
 rv.V("""Loads and Geometry 
 
     Beam Loads _[T]
-    D_1 := 3.8*psf | psf, kPA, 2 | joists DL         
-    D_2 := 2.1*psf | psf, kPA, 2 | plywood DL          
-    D_3 := 10.0*psf | psf, kPA, 2 | partitions DL       
-    D_4 := 2*0.5*klf |klf, kN_m , 2 | fixed machinery  DL
-    L_1 := 40*psf | psf, kPA, 2 | ASCE7-O5 LL 
+    D_1 =: 3.8*psf | psf, kPA, 2 | joists DL         
+    D_2 =: 2.1*psf | psf, kPA, 2 | plywood DL          
+    D_3 =: 10.0*psf | psf, kPA, 2 | partitions DL       
+    D_4 =: 2*0.5*klf |klf, kN_m , 2 | fixed machinery  DL
+    L_1 =: 40*psf | psf, kPA, 2 | ASCE7-O5 LL 
     
-    | VALUES | s-beam1-v.csv | Beam Geometry, 0:0  _[T]
+    | VALTABLE | beam1-v.csv | Beam Geometry, 0:0, num
 
     Uniform Distributed Loads
-    dl_1 <= 1.2 * (W_1 * (D_1 + D_2 + D_3) + D_4) | klf, kN_m, 2 | dead load : ASCE7-05 2.3.2  _[E]
+    dl_1 <=: 1.2 * (W_1 * (D_1 + D_2 + D_3) + D_4) | klf, kN_m, 2 | dead load : ASCE7-05 2.3.2  _[E]
 
-    ll_1 <= 1.6 * W_1 * L_1 | klf, kN_m, 2 | live load : ASCE7-05 2.3.2 _[E]
+    ll_1 <=: 1.6 * W_1 * L_1 | klf, kN_m, 2 | live load : ASCE7-05 2.3.2 _[E]
     
-    omega_1 <= dl_1 + ll_1 | klf, kN_m, 2 | total load : ASCE7-05 2.3.2 _[E]
+    omega_1 <=: dl_1 + ll_1 | klf, kN_m, 2 | total load : ASCE7-05 2.3.2 _[E]
 
     """)
 # %% section properties
 rv.V("""Beam Section Properties
 
-    | PYTHON | s-sectprop.py | nodocstring
+    | PYTHON | sectprop.py | nodocstring
 
-    section_1 <= rectsect(10*inch, 18*inch) | in3, cm3, 2 | function: rect sect modulus _[E]
+    section_1 <=: rectsect(10*inch, 18*inch) | in3, cm3, 2 | function: rect sect modulus _[E]
 
-    inertia_1 <= rectinertia(10*inch, 18*inch) | in4, cm4, 1 | function: rect moment inertia _[E]
+    inertia_1 <=: rectinertia(10*inch, 18*inch) | in4, cm4, 1 | function: rect moment inertia _[E]
 
     """)
 # %% force
 rv.V("""Force and Stress
         
-        m_1 <= omega_1 * S_1**2 / 8 | ftkips, mkN, 2 | mid-span UDL moment _[E]
+        m_1 <=: omega_1 * S_1**2 / 8 | ftkips, mkN, 2 | mid-span UDL moment _[E]
 
-        fb_1 <= m_1 / section_1 | psi, MPA, 1 | bending stress _[E]
+        fb_1 <=: m_1 / section_1 | psi, MPA, 1 | bending stress _[E]
+
+        fb_1 < 10*ksi | ok, not ok, blue, red, right _[E]
     
     """)
 # %% tool
@@ -80,9 +81,9 @@ rv.T("""Metadata
 rv.D("""Publish Doc 
 
     _[[LAYOUT]]
-        logopathS: logo.png 
+        logopathP: logo.png 
         pdfheaderL: [docnameS, pageS, totalpageS]
-        footerL: [logo, filenaem, date, time]
+        footerL: [logoO, dateO, timeO, filenameS, versionS]
     _[[END]]
     
     | PUBLISH | rivt | rst2pdf

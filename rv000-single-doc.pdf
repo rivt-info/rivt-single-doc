@@ -1092,7 +1092,7 @@ endobj
 endobj
 22 0 obj
 <<
-/Author () /CreationDate (D:20251223054834-08'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20251223054834-08'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20251225204713-08'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20251225204713-08'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title () /Trapped /False
 >>
 endobj
@@ -1128,7 +1128,7 @@ endobj
 endobj
 29 0 obj
 <<
-/Length 8332
+/Length 8317
 >>
 stream
 1 0 0 1 0 0 cm 
@@ -1286,7 +1286,7 @@ Q
 q
 1 0 0 1 48.51969 305.7095 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (Table 2) Tj /F2+0 10 Tf 12 TL (: Beam Loads and Properties) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (Table 2) Tj /F2+0 10 Tf 12 TL (: Beam Loads) Tj T* ET
 Q
 Q
 q
@@ -1645,10 +1645,10 @@ q
 1 0 0 1 42.51969 28.34646 cm
 q
 q
-36 0 0 33.87061 105.9051 -10.9353 cm
+36 0 0 33.87061 106.0589 -10.9353 cm
 /FormXob.5344e171c9dc86bcab0a0856dd596ce0 Do
 Q
-BT 1 0 0 1 0 2 Tm 105.9051 0 Td 12 TL 36 0 Td 0 0 0 rg /F2+0 10 Tf 12 TL ( | 2025-12-23 - 05:48AM | rholland | rv000-single-doc v0.7.1) Tj T* -141.9051 0 Td ET
+BT 1 0 0 1 0 2 Tm 106.0589 0 Td 12 TL 36 0 Td 0 0 0 rg /F2+0 10 Tf 12 TL ( | 2025-12-25 - 08:47PM | rholland | rv000-single-doc v0.7.2) Tj T* -142.0589 0 Td ET
 Q
 Q
  
@@ -1737,21 +1737,21 @@ q
 1 0 0 1 192.4513 39 cm
 q
 0 0 0 rg
+BT 1 0 0 1 0 2 Tm 7.580856 0 Td /F1+0 10 Tf 12 TL (D_4) Tj T* -7.580856 0 Td ET
+Q
+Q
+q
+1 0 0 1 236.8444 39 cm
+q
+0 0 0 rg
 BT 1 0 0 1 0 2 Tm 15.32668 0 Td /F1+0 10 Tf 12 TL (W_1) Tj T* -15.32668 0 Td ET
 Q
 Q
 q
-1 0 0 1 254.6017 39 cm
+1 0 0 1 298.9948 39 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm 25.33812 0 Td /F1+0 10 Tf 12 TL (D_3) Tj T* -25.33812 0 Td ET
-Q
-Q
-q
-1 0 0 1 334.5094 39 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm 7.580856 0 Td /F1+0 10 Tf 12 TL (D_4) Tj T* -7.580856 0 Td ET
 Q
 Q
 q
@@ -1800,21 +1800,21 @@ q
 1 0 0 1 192.4513 21 cm
 q
 0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (klf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 236.8444 21 cm
+q
+0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (2.00 ft) Tj T* ET
 Q
 Q
 q
-1 0 0 1 254.6017 21 cm
+1 0 0 1 298.9948 21 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (10.00 psf) Tj T* ET
-Q
-Q
-q
-1 0 0 1 334.5094 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (klf) Tj T* ET
 Q
 Q
 q
@@ -1840,8 +1840,8 @@ n 0 36 m 514.9606 36 l S
 n 71.02905 0 m 71.02905 72 l S
 n 159.8154 0 m 159.8154 72 l S
 n 186.4513 0 m 186.4513 72 l S
-n 248.6017 0 m 248.6017 72 l S
-n 328.5094 0 m 328.5094 72 l S
+n 230.8444 0 m 230.8444 72 l S
+n 292.9948 0 m 292.9948 72 l S
 n 372.9025 0 m 372.9025 72 l S
 n 443.9316 0 m 443.9316 72 l S
 n 0 72 m 514.9606 72 l S
@@ -1924,14 +1924,14 @@ q
 1 0 0 1 292.0892 39 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm 34.31708 0 Td /F1+0 10 Tf 12 TL (W_1) Tj T* -34.31708 0 Td ET
+BT 1 0 0 1 0 2 Tm 50.63082 0 Td /F1+0 10 Tf 12 TL (L_1) Tj T* -50.63082 0 Td ET
 Q
 Q
 q
-1 0 0 1 392.2205 39 cm
+1 0 0 1 420.8294 39 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm 50.63082 0 Td /F1+0 10 Tf 12 TL (L_1) Tj T* -50.63082 0 Td ET
+BT 1 0 0 1 0 2 Tm 34.31708 0 Td /F1+0 10 Tf 12 TL (W_1) Tj T* -34.31708 0 Td ET
 Q
 Q
 0 0 0 rg
@@ -1966,14 +1966,14 @@ q
 1 0 0 1 292.0892 21 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (2.00 ft) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (40.00 psf) Tj T* ET
 Q
 Q
 q
-1 0 0 1 392.2205 21 cm
+1 0 0 1 420.8294 21 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (40.00 psf) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (2.00 ft) Tj T* ET
 Q
 Q
 q
@@ -1985,7 +1985,7 @@ n 0 36 m 514.9606 36 l S
 n 114.4357 0 m 114.4357 72 l S
 n 243.1759 0 m 243.1759 72 l S
 n 286.0892 0 m 286.0892 72 l S
-n 386.2205 0 m 386.2205 72 l S
+n 414.8294 0 m 414.8294 72 l S
 n 0 72 m 514.9606 72 l S
 n 0 0 m 514.9606 0 l S
 n 0 0 m 0 72 l S
@@ -2066,14 +2066,14 @@ q
 1 0 0 1 285.8699 39 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm 58.79987 0 Td /F1+0 10 Tf 12 TL (ll_1) Tj T* -58.79987 0 Td ET
+BT 1 0 0 1 0 2 Tm 29.17469 0 Td /F1+0 10 Tf 12 TL (dl_1) Tj T* -29.17469 0 Td ET
 Q
 Q
 q
-1 0 0 1 431.4023 39 cm
+1 0 0 1 375.4283 39 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm 29.17469 0 Td /F1+0 10 Tf 12 TL (dl_1) Tj T* -29.17469 0 Td ET
+BT 1 0 0 1 0 2 Tm 58.79987 0 Td /F1+0 10 Tf 12 TL (ll_1) Tj T* -58.79987 0 Td ET
 Q
 Q
 0 0 0 rg
@@ -2108,14 +2108,14 @@ q
 1 0 0 1 285.8699 21 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (128.00 ft\001psf) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (1.24 klf) Tj T* ET
 Q
 Q
 q
-1 0 0 1 431.4023 21 cm
+1 0 0 1 375.4283 21 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (1.24 klf) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (128.00 ft\001psf) Tj T* ET
 Q
 Q
 q
@@ -2127,7 +2127,7 @@ n 0 36 m 514.9606 36 l S
 n 111.948 0 m 111.948 72 l S
 n 246.2855 0 m 246.2855 72 l S
 n 279.8699 0 m 279.8699 72 l S
-n 425.4023 0 m 425.4023 72 l S
+n 369.4283 0 m 369.4283 72 l S
 n 0 72 m 514.9606 72 l S
 n 0 0 m 514.9606 0 l S
 n 0 0 m 0 72 l S
@@ -2298,10 +2298,10 @@ q
 1 0 0 1 42.51969 28.34646 cm
 q
 q
-36 0 0 33.87061 105.9051 -10.9353 cm
+36 0 0 33.87061 106.0589 -10.9353 cm
 /FormXob.5344e171c9dc86bcab0a0856dd596ce0 Do
 Q
-BT 1 0 0 1 0 2 Tm 105.9051 0 Td 12 TL 36 0 Td 0 0 0 rg /F2+0 10 Tf 12 TL ( | 2025-12-23 - 05:48AM | rholland | rv000-single-doc v0.7.1) Tj T* -141.9051 0 Td ET
+BT 1 0 0 1 0 2 Tm 106.0589 0 Td 12 TL 36 0 Td 0 0 0 rg /F2+0 10 Tf 12 TL ( | 2025-12-25 - 08:47PM | rholland | rv000-single-doc v0.7.2) Tj T* -142.0589 0 Td ET
 Q
 Q
  
@@ -2516,14 +2516,14 @@ q
 1 0 0 1 302.1024 39 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm 30.21432 0 Td /F1+0 10 Tf 12 TL (omega_1) Tj T* -30.21432 0 Td ET
+BT 1 0 0 1 0 2 Tm 37.82761 0 Td /F1+0 10 Tf 12 TL (S_1) Tj T* -37.82761 0 Td ET
 Q
 Q
 q
-1 0 0 1 417.9685 39 cm
+1 0 0 1 405.0945 39 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm 37.82761 0 Td /F1+0 10 Tf 12 TL (S_1) Tj T* -37.82761 0 Td ET
+BT 1 0 0 1 0 2 Tm 30.21432 0 Td /F1+0 10 Tf 12 TL (omega_1) Tj T* -30.21432 0 Td ET
 Q
 Q
 0 0 0 rg
@@ -2558,14 +2558,14 @@ q
 1 0 0 1 302.1024 21 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (1.37 klf) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (14.00 ft) Tj T* ET
 Q
 Q
 q
-1 0 0 1 417.9685 21 cm
+1 0 0 1 405.0945 21 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (14.00 ft) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (1.37 klf) Tj T* ET
 Q
 Q
 q
@@ -2577,7 +2577,7 @@ n 0 36 m 514.9606 36 l S
 n 141.6142 0 m 141.6142 72 l S
 n 257.4803 0 m 257.4803 72 l S
 n 296.1024 0 m 296.1024 72 l S
-n 411.9685 0 m 411.9685 72 l S
+n 399.0945 0 m 399.0945 72 l S
 n 0 72 m 514.9606 72 l S
 n 0 0 m 514.9606 0 l S
 n 0 0 m 0 72 l S
@@ -2754,10 +2754,10 @@ q
 1 0 0 1 42.51969 28.34646 cm
 q
 q
-36 0 0 33.87061 105.9051 -10.9353 cm
+36 0 0 33.87061 106.0589 -10.9353 cm
 /FormXob.5344e171c9dc86bcab0a0856dd596ce0 Do
 Q
-BT 1 0 0 1 0 2 Tm 105.9051 0 Td 12 TL 36 0 Td 0 0 0 rg /F2+0 10 Tf 12 TL ( | 2025-12-23 - 05:48AM | rholland | rv000-single-doc v0.7.1) Tj T* -141.9051 0 Td ET
+BT 1 0 0 1 0 2 Tm 106.0589 0 Td 12 TL 36 0 Td 0 0 0 rg /F2+0 10 Tf 12 TL ( | 2025-12-25 - 08:47PM | rholland | rv000-single-doc v0.7.2) Tj T* -142.0589 0 Td ET
 Q
 Q
  
@@ -2815,16 +2815,16 @@ xref
 0000095503 00000 n 
 0000095627 00000 n 
 0000095699 00000 n 
-0000104083 00000 n 
-0000113921 00000 n 
-0000120804 00000 n 
-0000120863 00000 n 
-0000120897 00000 n 
-0000120931 00000 n 
+0000104068 00000 n 
+0000113906 00000 n 
+0000120789 00000 n 
+0000120848 00000 n 
+0000120882 00000 n 
+0000120916 00000 n 
 trailer
 <<
 /ID 
-[<ff9c8d0eea9f60d3c77fdb73219536b4><ff9c8d0eea9f60d3c77fdb73219536b4>]
+[<1f91858650ef547c5e26dbc10ca3c744><1f91858650ef547c5e26dbc10ca3c744>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 22 0 R
@@ -2832,5 +2832,5 @@ trailer
 /Size 36
 >>
 startxref
-120965
+120950
 %%EOF
