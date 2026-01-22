@@ -26,7 +26,7 @@ rv.I("""Load Combinations
 # %% values
 rv.V("""Loads and Geometry 
 
-    Beam Loads _[T]
+    Unit Loads _[T]
     D_1 =: 3.8*psf | psf, kPA, 2 | joists DL         
     D_2 =: 2.1*psf | psf, kPA, 2 | plywood DL          
     D_3 =: 10.0*psf | psf, kPA, 2 | partitions DL       

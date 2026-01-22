@@ -1,18 +1,14 @@
-01-22 04:08  rv001-single-doc   INFO     Doc start
-01-22 04:08  rv001-single-doc   INFO     rivtlib version: 0.7.1
-01-22 04:08  rv001-single-doc   INFO     rivt backup : c:\git\rivt-single-doc-git\rv001-single-doc.bak
-01-22 04:08  rv001-single-doc   INFO     SECTION 1 - type I
-01-22 04:08  rv001-single-doc   INFO     tag : _[T]
-01-22 04:08  rv001-single-doc   INFO     command : IMAGE
-01-22 04:08  rv001-single-doc   DEBUG    STREAM b'IHDR' 16 13
-01-22 04:08  rv001-single-doc   DEBUG    STREAM b'pHYs' 41 9
-01-22 04:08  rv001-single-doc   DEBUG    STREAM b'IDAT' 62 8192
-01-22 04:08  rv001-single-doc   INFO     tag : _[E]
-01-22 04:08  rv001-single-doc   INFO     tag : _[M]
-01-22 04:08  rv001-single-doc   INFO     SECTION 2 - type V
-01-22 04:08  rv001-single-doc   INFO     tag : _[T]
-01-22 04:08  rv001-single-doc   INFO     command : VALTABLE
-01-22 04:08  rv001-single-doc   INFO     SECTION 3 - type V
-01-22 04:08  rv001-single-doc   INFO     command : PYTHON
-01-22 04:08  rv001-single-doc   INFO     SECTION 4 - type V
-01-22 04:08  rv001-single-doc   INFO     tag : _[E]
+01-22 04:35  rv001-single-doc   INFO     Doc start
+01-22 04:35  rv001-single-doc   INFO     rivtlib version: 0.7.1
+01-22 04:35  rv001-single-doc   INFO     rivt backup : C:\git\rivt-single-doc-git\rv001-single-doc.bak
+01-22 04:35  rv001-single-doc   INFO     SECTION 1 - type I
+01-22 04:35  rv001-single-doc   INFO     tag : _[T]
+01-22 04:35  rv001-single-doc   INFO     command : IMAGE
+01-22 04:35  rv001-single-doc   DEBUG    STREAM b'IHDR' 16 13
+01-22 04:35  rv001-single-doc   DEBUG    STREAM b'pHYs' 41 9
+01-22 04:35  rv001-single-doc   DEBUG    STREAM b'IDAT' 62 8192
+01-22 04:35  rv001-single-doc   INFO     tag : _[E]
+01-22 04:35  rv001-single-doc   INFO     tag : _[M]
+01-22 04:35  rv001-single-doc   INFO     SECTION 2 - type V
+01-22 04:35  rv001-single-doc   INFO     tag : _[T]
+01-22 04:35  rv001-single-doc   INFO     command : VALTABLE
