@@ -30,17 +30,17 @@ rv.V("""Loads and Geometry
     D_1 =: 3.8*psf | psf, kPA, 2 | joists DL         
     D_2 =: 2.1*psf | psf, kPA, 2 | plywood DL          
     D_3 =: 10.0*psf | psf, kPA, 2 | partitions DL       
-    D_4 =: 2*0.5*klf |klf, kN_m , 2 | fixed machinery  DL
+    D_4 =: 2*0.5*klf |klf, kNm_ , 2 | fixed machinery  DL
     L_1 =: 40*psf | psf, kPA, 2 | ASCE7-O5 LL 
     
     | VALTABLE | beam1.csv | Beam Geometry, 0:0, num
 
     Uniform Distributed Loads
-    dl_1 <=: 1.2 * (W_1 * (D_1 + D_2 + D_3) + D_4) | klf, kN_m, 2 | dead load : ASCE7-05 2.3.2  _[E]
+    dl_1 <=: 1.2 * (W_1 * (D_1 + D_2 + D_3) + D_4) | klf, kNm_, 2 | dead load : ASCE7-05 2.3.2  _[E]
 
-    ll_1 <=: 1.6 * W_1 * L_1 | klf, kN_m, 2 | live load : ASCE7-05 2.3.2 _[E]
+    ll_1 <=: 1.6 * W_1 * L_1 | klf, kNm_, 2 | live load : ASCE7-05 2.3.2 _[E]
     
-    omega_1 <=: dl_1 + ll_1 | klf, kN_m, 2 | total load : ASCE7-05 2.3.2 _[E]
+    omega_1 <=: dl_1 + ll_1 | klf, kNm_, 2 | total load : ASCE7-05 2.3.2 _[E]
 
     """)
 # %% section properties
@@ -58,9 +58,9 @@ rv.V("""Force and Stress
         
         m_1 <=: omega_1 * S_1**2 / 8 | ftkips, mkN, 2 | mid-span UDL moment _[E]
 
-        fb_1 <=: m_1 / section_1 | psi, MPA, 1 | bending stress _[E]
+        fb_1 <=: m_1 / section_1 | lbin2_, MPA, 1 | bending stress _[E]
 
-        fb_1 < 20*ksi | ok, not ok, blue, red  _[E]
+        fb_1 < 20000*lbin2_ | ksi, 2, ok, not ok | stress check _[E]
     
     """)
 # %% doc
@@ -82,6 +82,6 @@ rv.D("""Publish Doc
         footerL: [logoO, dateO, timeO, filenameS, versionS]
     _[[END]]
     
-    | PUBLISH | rivt.ini | rst2pdf
+    | PUBLISH | rivt.ini | text
 
     """)
