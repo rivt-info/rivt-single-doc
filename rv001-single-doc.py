@@ -21,8 +21,8 @@ rv.I("""Load Combinations
     Bending Stress _[E]
     
     σ1 = M1 / S1 _[M]
-
     """)
+
 # %% values
 rv.V("""Loads and Geometry 
 
@@ -41,18 +41,18 @@ rv.V("""Loads and Geometry
     ll_1 <=: 1.6 * W_1 * L_1 | klf, kNm_, 2 | live load : ASCE7-05 2.3.2 _[E]
     
     omega_1 <=: dl_1 + ll_1 | klf, kNm_, 2 | total load : ASCE7-05 2.3.2 _[E]
-
     """)
+
 # %% section properties
 rv.V("""Beam Section Properties
 
     | PYTHON | sectprop.py | nodocstring
 
-    section_1 <=: rectsect(10*inch, 18*inch) | in3, cm3, 2 | function: rect sect modulus _[E]
+    section_1 <=: rectsect(10*inch, 18*inch) | in3, cm3, 2 | function: rect. S _[E]
 
-    inertia_1 <=: rectinertia(10*inch, 18*inch) | in4, cm4, 1 | function: rect moment inertia _[E]
-
+    inertia_1 <=: rectinertia(10*inch, 18*inch) | in4, cm4, 1 | function: rect. I _[E]
     """)
+
 # %% force
 rv.V("""Force and Stress
         
@@ -61,27 +61,81 @@ rv.V("""Force and Stress
         fb_1 <=: m_1 / section_1 | lbin2_, MPA, 1 | bending stress _[E]
 
         fb_1 < 20000*lbin2_ | ksi, 2, ok, not ok | stress check _[E]
-    
     """)
+
 # %% doc
 rv.D("""Publish Doc 
 
     _[[METADATA]] 
-    "authors": "rholland",
-    "version": "0.7.2",
-    "email": "rod.h.holland@gmail.com",
-    "repo": "https://github.com/rivt-info/rivt-single-doc",
-    "license": "https://opensource.org/license/mit/",
-    "fork1": ["author", "version", "email", "repo"],
-    "fork2": [],
+    authors = rholland
+    version = 0.7.2
+    repo = https://github.com/rivt-info/rivt-single-doc
+    license = https://opensource.org/license/mit/
+    fork1 = _author_, _version_, _repo_
     _[[END]]
 
-    _[[LAYOUT]]
-        logopathP: logo.png 
-        pdfheaderL: [docnameS, pageS, totalpageS]
-        footerL: [logoO, dateO, timeO, filenameS, versionS]
+    _[[LAYOUT]]    
+    [rlabpdf]
+    header = docname, page, totalpages
+    sytlesheets = rlab.yaml
+    cover = cover.rst
+    logopath = logo.png 
+    footer = logo, date, time, filename, version
+
+    [texpdf]
+    header = docname, page, totalpages
+    stylesheets = texpdf.sty
+    cover = cover.tex
+    logopath = logo.png 
+    footer = logo, date, time, filename, version
+
+    [html]
+    cssfiles =  layout.css
+    logopath = logo.png 
+    footer = logo, date, time, filename, version
+
+    [text]
+    title = date, time, docname, version
+    width=80    
     _[[END]]
     
-    | PUBLISH | rivt.ini | text
+    | PUBLISH | Single Doc Example | rlabpdf
+    """)
+# %% layout comments
+rv.S("""Layout Options
+
+    _[[LAYOUT]] follows init syntax
+    [layout]
+    ini = layout.ini
+    docname = Single Doc Example
+    
+    [rlabpdf]
+    header = docname, page, totalpages
+    cover = cover.rst
+    stylesheets = rlab.yaml
+    pagesize = letter
+    margin_top = 1in
+    margin_bottom = 1in
+    logopath = logo.png 
+    footer = logo, date, time, filename, version
+
+    [texpdf]
+    header = docname, page, totalpages
+    cover = cover.tex
+    sytlesheets = texpdf.sty
+    pagesize = letter
+    margin_top = 1in
+    margin_bottom = 1in
+    logopath = logo.png 
+    footer = logo, date, time, filename, version
+
+    [text]
+    header = date, time, filename, version
+    width=80
+    
+    [html]
+    cssfiles =  layout.css
+    footer = logo, date, time, filename, version
+    _[[END]]
 
     """)
