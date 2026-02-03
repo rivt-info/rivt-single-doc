@@ -145,36 +145,9 @@
     },
     "todohighlight.keywords": [
         {
-            "text": " =: ",
-            "color": "#e76e50",
-        },
-        {
-            "text": " <=: ",
-            "color": "#e76e50",
-        },
-        {
-            "text": " < ",
-            "color": "#e76e50",
-        },
-        {
-            "text": " > ",
-            "color": "#e76e50",
-        },
-        {
-            "text": " <= ",
-            "color": "#e76e50",
-        },
-        {
-            "text": " => ",
-            "color": "#e76e50",
-        },
-        {
-            "text": " != ",
-            "color": "#e76e50",
-        },
-        {
-            "text": " == ",
-            "color": "#e76e50",
+            "text": "# %%",
+            "color": "#a19e6d",
+            "isWholeLine": true,
         },
         {
             "text": "rv.R",
@@ -210,6 +183,42 @@
             "text": "rv.X",
             "color": "red",
             "isWholeLine": true,
+        },
+        {
+            "text": " :=: ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " =: ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " <=: ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " < ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " > ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " <= ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " => ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " != ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " == ",
+            "color": "#e76e50",
         },
         {
             "text": "\"\"\")",

@@ -1,12 +1,4 @@
 {
-    "new cell (cel}": {
-        "prefix": "cel",
-        "description": "insert cell label",
-        "scope": "python",
-        "body": [
-            "# %% ${0:paste}"
-        ]
-    },
     "import API (api)": {
         "prefix": "api",
         "description": "import rivt api",
@@ -15,7 +7,7 @@
             "import rivtlib.api as rv"
         ]
     },
-    "Meta API (rv.M)": {
+    "Meta API (rvm)": {
         "prefix": "rvm",
         "description": "Meta API method",
         "scope": "python",
@@ -27,7 +19,7 @@
             "    \"\"\")"
         ]
     },
-    "Run API (rv.R)": {
+    "Run API (rvr)": {
         "prefix": "rvr",
         "description": "Run API method",
         "scope": "python",
@@ -39,7 +31,7 @@
             "    \"\"\")"
         ]
     },
-    "Insert API (rv.I)": {
+    "Insert API (rvi)": {
         "prefix": "rvi",
         "description": "API method",
         "scope": "python",
@@ -87,12 +79,12 @@
             "    \"\"\")"
         ]
     },
-    "cmd append ( |a )": {
-        "prefix": "|ap",
-        "description": "append pdf file - D api",
+    "cmd attach ( |at )": {
+        "prefix": "|at",
+        "description": "attach pdf file - D api",
         "scope": "python",
         "body": [
-            "| append | src/${1:path} | ${0:cover title} "
+            "| attachpdf | src/${1:path} | ${0:cover title} "
         ]
     },
     "cmd image ( |im )": {
