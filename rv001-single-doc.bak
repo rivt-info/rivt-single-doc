@@ -15,7 +15,7 @@ rv.I("""Load Combinations
     16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
     ============= ================================================
 
-    | IMAGE | beam1.png | Beam Geometry, .65, num
+    | IMAGE | beam1.png | Beam Geometry, 65, num
 
     Bending Stress _[E]
     
@@ -45,6 +45,8 @@ rv.V("""Loads and Geometry
 rv.V("""Beam Stress
     **Section Properties**
 
+    ## this is a comment and will not appear in the doc
+
     | PYTHON | sectprop.py | nodocstring
 
     section_1 :=: rectsect(10*inch, 18*inch) | in3, cm3, 2 | function: rect. S _[E]
@@ -57,7 +59,7 @@ rv.V("""Beam Stress
 
     fb_1 <=: m_1 / section_1 | lb_in2, MPA, 1 | bending stress _[E]
 
-    fb_1 < 20000*lb_in2 | ksi, 2, ok, not ok | stress check _[E]
+    fb_1 < 20000*lb_in2 | ksi, 2, >>> OK, >>> NOT OK | stress ratio _[E]
     """)
 
 # %% rv.D("""Publish Doc
@@ -70,68 +72,30 @@ rv.D("""Publish Doc
     fork1 = _author_, _version_, _repo_
     _[[END]]
 
-    _[[LAYOUTx]]    
+    _[[LAYOUT]]    
+    [general]
+    logopath = logo.png
+    footer = date, time, filename, version
+    pagesize = letter
+    margins = 1in, 1in, 1in, 1in
+    
     [rlabpdf]
-    header = docname, page, totalpages
-    sytlesheets = rlab.yaml
+    header = page, totalpages
+    stylesheet = rlab.yaml
     cover = cover.rst
-    logopath = logo.png 
-    footer = logo, date, time, filename, version
-
+    
     [texpdf]
-    header = docname, page, totalpages
-    stylesheets = texpdf.sty
+    header = page, totalpages
+    stylesheet = texpdf.sty
     cover = cover.tex
-    logopath = logo.png 
-    footer = logo, date, time, filename, version
-
+    
     [html]
-    cssfiles =  htmlsite.css
-    logopath = logo.png 
-    footer = logo, date, time, docname, version
+    cssfile =  htmlsite.css
 
     [text]
-    title = date, time, docname, version
+    title = docname, date, time, version
     width=80    
-    _[[ENDx]]
-    
-    | PUBLISH | Single Doc Example | rlabpdf
-    """)
-# %% layout comments
-rv.S("""Layout Options
-
-    _[[LAYOUT]] follows init syntax
-    [layout]
-    ini = layout.ini
-    docname = Single Doc Example
-    
-    [rlabpdf]
-    header = docname, page, totalpages
-    cover = cover.rst
-    stylesheets = rlab.yaml
-    pagesize = letter
-    margin_top = 1in
-    margin_bottom = 1in
-    logopath = logo.png 
-    footer = logo, date, time, filename, version
-
-    [texpdf]
-    header = docname, page, totalpages
-    cover = cover.tex
-    sytlesheets = texpdf.sty
-    pagesize = letter
-    margin_top = 1in
-    margin_bottom = 1in
-    logopath = logo.png 
-    footer = logo, date, time, filename, version
-
-    [text]
-    header = date, time, filename, version
-    width=80
-    
-    [html]
-    cssfiles =  layout.css
-    footer = logo, date, time, filename, version
     _[[END]]
-
+    
+    | PUBLISH | Single Doc Example1 | rlabpdf
     """)

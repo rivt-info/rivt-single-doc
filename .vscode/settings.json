@@ -181,7 +181,12 @@
         },
         {
             "text": "rv.X",
-            "color": "red",
+            "color": "darkorange",
+            "isWholeLine": true,
+        },
+        {
+            "text": "##",
+            "color": "darkorange",
             "isWholeLine": true,
         },
         {
