@@ -3,7 +3,6 @@
 import rivtlib.rvapi as rv
 
 # rv singledoc: True
-# rv latex: False
 
 # %% rv.I("""Load Combinations
 rv.I("""Load Combinations 
