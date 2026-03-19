@@ -19,8 +19,6 @@ rv.I("""Load Combinations
 
     Bending Stress _[E]
     
-    :ref:`linktoref`
-
     σ1 = M1 / S1 _[M]
     """)
 
@@ -67,8 +65,6 @@ rv.V("""Beam Stress
 # %% rv.D("""Publish Doc
 rv.D("""Publish Doc 
     
-    .. _linktoref:
-
     _[[METADATA]] 
     [primary]
     authors = rholland
@@ -82,19 +78,18 @@ rv.D("""Publish Doc
     _[[LAYOUT]]    
     [general]
     logopath = logo.png
-    footer = docname, author, date, time, version
+    footer = docname, author1;author2, date, time, version
     pagesize = letter
     margins = 1in, 1in, 1in, 1in
     [pdf]
     header = page, totalpages
-    stylesheet = rlab.yaml
+    stylesheet = rivtrlab.yaml
     cover = cover.rst
     [html]
-    cssfile =  htmlsite.css
+    indexfile = $filename
     [text]
-    title = docname, author, date, time, version
     width=80    
-    [texpdf]
+    [latex]
     header = page, totalpages
     stylesheet = texpdf.sty
     cover = cover.tex
