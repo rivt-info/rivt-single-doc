@@ -1,7 +1,6 @@
-.. contents:: Single Doc Example 1
-   :depth: 2 
+.. header::
 
- 
+   2026-03-18 - 08:14PM  |   -   |  rv001-single-doc  v - 
 [ 1i ] Load Combinations
 --------------------------------------------------------------------------------
 
@@ -18,7 +17,7 @@ Equation No.    Load Combination
 
 
 .. image:: C:/git/rivt-single-doc-git/beam1.png
-   :width: 50%
+   :width: 50 %
    :align: center
 
 
@@ -26,24 +25,18 @@ Equation No.    Load Combination
 
    Beam Geometry
 
-
  
+.. raw:: html
 
-.. class:: align-right
-
-   Bending Stress **[Eq 1]**
-
+   <p align="right">Bending Stress **[Eq 1]**</p> 
 
 
  
-`my link<linktoref>`__
+:ref:`linktoref`
  
-
-
 .. code:: 
 
-
-          M₁
+             M₁
      σ₁ = ──
           S₁
 
@@ -74,11 +67,9 @@ S_1         14.00 ft     4.27 m  beam span
  
 
 
+.. raw:: html
 
-.. class:: align-right
-
-   dead load : ASCE7-05 2.3.2   **[Eq 2]**
-
+   <p align="right">dead load : ASCE7-05 2.3.2   **[Eq 2]**</p> 
 
 
 .. code:: 
@@ -91,19 +82,17 @@ S_1         14.00 ft     4.27 m  beam span
 1.24 klf  18.07 kN_m
 ========  ==========
 
-=========  =======  ========  ========  =====
-   D_3       W_1      D_2       D_1      D_4
-=========  =======  ========  ========  =====
-10.00 psf  2.00 ft  2.10 psf  3.80 psf   klf
-=========  =======  ========  ========  =====
+========  =========  =====  ========  =======
+  D_1        D_3      D_4     D_2       W_1
+========  =========  =====  ========  =======
+3.80 psf  10.00 psf   klf   2.10 psf  2.00 ft
+========  =========  =====  ========  =======
  
 
 
+.. raw:: html
 
-.. class:: align-right
-
-   live load : ASCE7-05 2.3.2  **[Eq 3]**
-
+   <p align="right">live load : ASCE7-05 2.3.2  **[Eq 3]**</p> 
 
 
 .. code:: 
@@ -116,19 +105,17 @@ S_1         14.00 ft     4.27 m  beam span
 0.13 klf  1.87 kN_m
 ========  =========
 
-=======  =========
-  W_1       L_1
-=======  =========
-2.00 ft  40.00 psf
-=======  =========
+=========  =======
+   L_1       W_1
+=========  =======
+40.00 psf  2.00 ft
+=========  =======
  
 
 
+.. raw:: html
 
-.. class:: align-right
-
-   total load : ASCE7-05 2.3.2  **[Eq 4]**
-
+   <p align="right">total load : ASCE7-05 2.3.2  **[Eq 4]**</p> 
 
 
 .. code:: 
@@ -159,11 +146,9 @@ S_1         14.00 ft     4.27 m  beam span
  
 
 
+.. raw:: html
 
-.. class:: align-right
-
-   function: rect. S  **[Eq 5]**
-
+   <p align="right">function: rect. S  **[Eq 5]**</p> 
 
 
 .. code:: 
@@ -179,11 +164,9 @@ S_1         14.00 ft     4.27 m  beam span
  
 
 
+.. raw:: html
 
-.. class:: align-right
-
-   function: rect. I  **[Eq 6]**
-
+   <p align="right">function: rect. I  **[Eq 6]**</p> 
 
 
 .. code:: 
@@ -200,11 +183,9 @@ S_1         14.00 ft     4.27 m  beam span
  
 
 
+.. raw:: html
 
-.. class:: align-right
-
-   mid-span UDL moment  **[Eq 7]**
-
+   <p align="right">mid-span UDL moment  **[Eq 7]**</p> 
 
 
 .. code:: 
@@ -228,11 +209,9 @@ S_1         14.00 ft     4.27 m  beam span
  
 
 
+.. raw:: html
 
-.. class:: align-right
-
-   bending stress  **[Eq 8]**
-
+   <p align="right">bending stress  **[Eq 8]**</p> 
 
 
 .. code:: 
@@ -247,19 +226,17 @@ S_1         14.00 ft     4.27 m  beam span
 743.8 lb_in2   5.1 MPA
 ============  =========
 
-===========  ============
- section_1       m_1
-===========  ============
-540.0 inch3  33.5 ft2·klf
-===========  ============
+============  ===========
+    m_1        section_1
+============  ===========
+33.5 ft2·klf  540.0 inch3
+============  ===========
  
 
 
+.. raw:: html
 
-.. class:: align-right
-
-   stress ratio  **[Eq 9]**
-
+   <p align="right">stress ratio  **[Eq 9]**</p> 
 
 
 .. code:: 
@@ -274,34 +251,12 @@ S_1         14.00 ft     4.27 m  beam span
   0.04    ratio      26.89
 ========  =====  ==============
 
-.. role:: compred
+.. raw:: html
 
-.. role:: compgreen
+   <p align="right">[92m>>> OK[00m</p> 
 
-
-.. class:: align-right
-
-   :compgreen:`>>> OK`
 
  
 
 end of doc
-
-.. |blklogo| image:: logo.png
-   :width: 175px
-   :alt: logo
-
-.. header::
-
-   Page ###Page### of ###Total###
-
-.. footer:: 
-
-   .. list-table::
-      :class: foottable2
-      :align: center
-      :widths: 88 12
- 
-      * - **Single Doc Example 1**  **|**  rholland  **|**  2026-03-16 - 03:58PM  **|**  v-0.8.1
-        - |blklogo|
 

@@ -100,5 +100,5 @@ rv.D("""Publish Doc
     cover = cover.tex
     _[[END]]
     
-    | PUBLISH | Single Doc Example 1 | text
+    | PUBLISH | Single Doc Example 1 | html
     """)
