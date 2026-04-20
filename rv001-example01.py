@@ -6,19 +6,25 @@ import rivtlib.rvapi as rv
 
 # %% rv.I("""Summary
 rv.I("""Summary  
+    
     This rivt example calculates the maximum stress and deflection in a simply
-    supported, uniformly loaded beam.
-
-    It is also an annotated example of a *single rivt doc* with multiple
-    sections. As a *single doc*, the report generating script is not used. The
-    example illustrates the use of most API functions, commands and tags. The
-    file can be formatted as a text, PDF or HTML doc by changing the format
-    parameter in | PUBLISH | command of the *Doc API (rv.D)*. Further details
-    are provided in the _[U] rivt user manual, https://www.rivt.info|. 
+    supported, uniformly loaded beam. It also serves as an annotated example of
+    a single doc with multiple sections (a *single doc* does not use the report
+    generating script).
+    
+    The example illustrates the use of most of the API functions, commands and
+    tags. The file is be formatted as a text, PDF or HTML doc by changing the
+    format parameter in | PUBLISH | command of the *Doc API (rv.D)*. Further
+    details are provided in the _[U] rivt user manual, https://www.rivt.info|.
+    
     """)
 
 # %% rv.I("""Load Combinations
 rv.I("""Load Combinations 
+
+    This is an inline table that uses the restructured text syntax. The *[T]* 
+    tag numbers the table.
+    
     ASCE 7-05 Load Effects _[T]
     ============= ================================================
     Equation No.    Load Combination
@@ -28,15 +34,38 @@ rv.I("""Load Combinations
     16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
     ============= ================================================
 
+    An inline table within a *[[TABLE]]* block produces the same output as above
+    and also writes the table to a CSV file in the *_stored* folder.
+
+    _[[TABLE]]  ASCE 7-05 Load Effects(2)
+    ============= ================================================
+    Equation No.    Load Combination
+    ============= ================================================
+    16-1           1.4(D+F)
+    16-2           1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)
+    16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
+    ============= ================================================
+    _[[END]]
+
+The *| IMAGE |* command inserts an image file with caption, scale (as
+percentage) and numbered options.
+
     | IMAGE | beam1.png | Beam Geometry, 50, num
 
+The *[E]* tagight justifies the label and adds an equation number
+
     Bending Stress _[E]
-    
+
+The *[M]* tag formats the equation using utf-8 text.
+
     σ1 = M1 / S1 _[M]
     """)
 
 # %% rv.V("""Loads and Geometry
 rv.V("""Loads and Geometry 
+    
+    
+    
     Unit Loads _[T]
     D_1 ==: 3.8*psf | psf, kPA, 2 | joists DL         
     D_2 ==: 2.1*psf | psf, kPA, 2 | plywood DL          

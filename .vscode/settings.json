@@ -31,15 +31,15 @@
     "fsdeploy.deployOnSave": true,
     "fsdeploy.nodes": [
         {
-            "source": "C:/git/rivt-single-doc-git",
-            "target": "E:/OneDrive/StL-rivt/rivt-single-doc",
+            "source": "C:/git/rivt-example-01-git",
+            "target": "E:/OneDrive/StL-rivt/rivt-example-01",
             "include": "**/*.*",
             "exclude": ".git,.gitignore",
             "deleteTargetOnDeploy": true,
         },
         {
-            "source": "C:/git/rivt-single-doc-git",
-            "target": "C:/OneDrive/StL-rivt/rivt-single-doc",
+            "source": "C:/git/rivt-example-01-git",
+            "target": "E:/OneDrive/StL-rivt/rivt-example-01",
             "include": "**/*.*",
             "exclude": ".git,.gitignore",
             "deleteTargetOnDeploy": true,
@@ -317,6 +317,11 @@
         },
         {
             "text": "_[[BOX]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[TABLE]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },
